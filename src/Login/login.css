@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.login-wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.login-left {
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+
+
+.login-right {
+  width: 50%;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  width: 380px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 35px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+.login-card h2 {
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 3px;
+  color: #8ecae6;
+}
+
+.sub-text {
+  text-align: center;
+  font-size: 12px;
+  color: #cfd8dc;
+  margin: 15px 0 30px;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 14px 45px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  font-size: 13px;
+  color: #ffffff;
+  outline: none;
+}
+
+.input-box input::placeholder {
+  color: #b0bec5;
+  letter-spacing: 1px;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #8ecae6;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffb703;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 25px;
+  color: #e0f2f1;
+}
+
+.options a {
+  text-decoration: none;
+  color: #ffb703;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #ffb703, #fb8500);
+  color: #000;
+  border: none;
+  border-radius: 30px;
+  letter-spacing: 2px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 15px rgba(255, 183, 3, 0.5);
+  font-weight: 500;
+}
+
+.login-btn:hover {
+  background: linear-gradient(90deg, #fb8500, #ffb703);
+  transform: scale(1.03);
+}
+
+/* BOTTOM */
+.bottom-text {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #8ecae6;
+}
+
+
+@media (max-width: 900px) {
+  .login-wrapper {
+    flex-direction: column;
+  }
+
+  .login-left,
+  .login-right {
+    width: 100%;
+  }
+
+  .login-left {
+    height: 40vh;
+  }
+}
